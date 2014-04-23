@@ -1,5 +1,5 @@
 NAME="check"
-VERSION=0.9.10
+VERSION=0.9.12
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Unit test framework for C"
@@ -10,6 +10,8 @@ failures and code errors that cause segmentation faults or other signals. The
 output from unit tests can be used within source code editors and IDEs."
 HOMEPAGE="http://check.sourceforge.net/"
 SRC_URI="mirror://sourceforge/check/${NAME}-${VERSION}.tar.gz"
+
+DIFF_EXCLUDES="check.h"
 
 # Using -ansi prevents <sys/features.h> (included by <unistd.h>) from
 # defining _POSIX_VERSION and friends which the code uses to determine
